@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "350374760815",
+    "project_id": "suz-facts-achievements-insport",
+    "storage_bucket": "suz-facts-achievements-insport.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350374760815:android:88dbcf95a5d68e19e8189a",
+        "android_client_info": {
+          "package_name": "kg.zukhridin.factsandachievementsinsports"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350374760815-4tl9lbk98qk5m93pndlrmrchr73pgkj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEBdR2X8lLPF3MMh7IgBcjeP4QPw1jlxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350374760815-4tl9lbk98qk5m93pndlrmrchr73pgkj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

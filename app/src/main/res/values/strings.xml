@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Facts and Achievements in sports</string>
+    <string name="internet_attention_text_for_dialog">For the application to work, you need access to the network!</string>
+    <string name="ok">OK</string>
+</resources>
