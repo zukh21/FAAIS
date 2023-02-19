@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">Facts and Achievements in sports</string>
-    <string name="internet_attention_text_for_dialog">For the application to work, you need access to the network!</string>
-    <string name="ok">OK</string>
+    <string name="internet_attention_text_for_dialog">In order for the app to work, you need access to the network!</string>
+    <string name="ok">Ok</string>
+    <string name="next">Next</string>
+    <string name="game_over">Game over!</string>
+    <string name="your_score">Your score</string>
+    <string name="time_is_over">Time is over!</string>
+    <string name="score">Score</string>
+    <string name="volleyball_facts_and_achievements">Volleyball facts and achievements</string>
+    <string name="football_facts_and_achievements">Football facts and achievements</string>
 </resources>

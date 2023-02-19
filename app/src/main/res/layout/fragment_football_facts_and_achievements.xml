@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    android:background="@color/white">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Score: 5" />
+
+        <TextView
+            android:id="@+id/stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="5" />
+
+
+        <TextView
+            android:id="@+id/allQuestionsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="3/10" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:textColor="#575656"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/allQuestionsView"
+            tools:text="Who is the inventer of material design?" />
+
+        <LinearLayout
+            android:id="@+id/answerButtonsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:orientation="vertical"
+            android:padding="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/question">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/firstOption"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF7DB2"
+                android:paddingVertical="12dp"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_size_btn_answers"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/corner_radius_btn_answers"
+                app:rippleColor="@android:color/transparent"
+                tools:text="YAHOO" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/secondOption"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF7DB2"
+                android:paddingVertical="12dp"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_size_btn_answers"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/corner_radius_btn_answers"
+                app:rippleColor="@android:color/transparent"
+                tools:text="Google" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/thirdOption"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF7DB2"
+                android:paddingVertical="12dp"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_size_btn_answers"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/corner_radius_btn_answers"
+                app:rippleColor="@android:color/transparent"
+                tools:text="IBM" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fourthOption"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF7DB2"
+                android:paddingVertical="12dp"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_size_btn_answers"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/corner_radius_btn_answers"
+                app:rippleColor="@android:color/transparent"
+                tools:text="Microsoft" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

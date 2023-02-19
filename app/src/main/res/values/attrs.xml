@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StatsView">
+        <attr name="textSize" format="dimension|reference" />
+        <attr name="lineWidth" format="dimension|reference" />
+        <attr name="color" format="color" />
+        <attr name="textStyle" format="flags">
+            <flag name="bold" value="0" />
+            <flag name="italic" value="1" />
+            <flag name="normal" value="2" />
+        </attr>
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+</resources>

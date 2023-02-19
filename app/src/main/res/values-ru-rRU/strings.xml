@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Факты и достижения в спорте</string>
+    <string name="internet_attention_text_for_dialog">Для того чтобы приложение работало, вам необходим доступ к сети!</string>
+    <string name="ok">Хорошо</string>
+    <string name="next">Следующий</string>
+    <string name="game_over">Игра окончена!</string>
+    <string name="your_score">Ваш счёт</string>
+    <string name="time_is_over">Время закончилось</string>
+    <string name="score">Счёт</string>
+    <string name="volleyball_facts_and_achievements">Волейбольные факты и достижения</string>
+    <string name="football_facts_and_achievements">Футбольные факты и достижения</string>
+</resources>

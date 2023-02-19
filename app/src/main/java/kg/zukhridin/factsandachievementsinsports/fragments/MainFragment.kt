@@ -23,11 +23,10 @@ import dagger.hilt.android.AndroidEntryPoint
 import kg.zukhridin.factsandachievementsinsports.R
 import kg.zukhridin.factsandachievementsinsports.databinding.FragmentMainBinding
 import kg.zukhridin.factsandachievementsinsports.firebase.AppSharedPreferences
-import kg.zukhridin.factsandachievementsinsports.units.CustomCheckInternet
-import kg.zukhridin.factsandachievementsinsports.units.CustomMainDialog
+import kg.zukhridin.factsandachievementsinsports.utils.CustomCheckInternet
+import kg.zukhridin.factsandachievementsinsports.utils.CustomMainDialog
 import javax.inject.Inject
 
-const val TAG = "remoteConfig"
 const val GOOGLE = "google"
 
 @AndroidEntryPoint
@@ -81,7 +80,7 @@ class MainFragment : Fragment() {
             if (task.isSuccessful) {
                 val url = remoteConfig.getString("url_website")
                 if (url == "" || Build.BRAND == GOOGLE || simCardUnknown()) {
-                    findNavController().navigate(R.id.action_mainFragment_to_appPlugFragment)
+                    findNavController().navigate(R.id.action_mainFragment_to_factsAndAchievementsFragment)
                 } else {
                     appSP.setAuth(url)
                     openWebView(url)

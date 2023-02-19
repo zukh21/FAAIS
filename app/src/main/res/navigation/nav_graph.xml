@@ -10,16 +10,34 @@
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_mainFragment_to_appPlugFragment"
-            app:destination="@id/appPlugFragment" />
+            android:id="@+id/action_mainFragment_to_factsAndAchievementsFragment"
+            app:destination="@id/factsAndAchievementsSplashScreenFragment" />
     </fragment>
     <fragment
-        android:id="@+id/appPlugFragment"
-        android:name="kg.zukhridin.factsandachievementsinsports.fragments.AppPlugFragment"
+        android:id="@+id/factsAndAchievementsSplashScreenFragment"
+        android:name="kg.zukhridin.factsandachievementsinsports.fragments.FactsAndAchievementsSplashScreenFragment"
         android:label="fragment_app_plug"
-        tools:layout="@layout/fragment_app_plug" >
+        tools:layout="@layout/fragment_facts_and_achievements_splash_screen" >
         <action
-            android:id="@+id/action_appPlugFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
+            android:id="@+id/action_factsAndAchievementsSplashScreenFragment_to_factsAndAchievementsFragment"
+            app:destination="@id/factsAndAchievementsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FragmentFootballFactsAndAchievementsBinding"
+        android:name="kg.zukhridin.factsandachievementsinsports.fragments.FootballFactsAndAchievementsFragment"
+        android:label="fragment_faais"
+        tools:layout="@layout/fragment_football_facts_and_achievements" >
+        <action
+            android:id="@+id/action_FragmentFootballFactsAndAchievementsBinding_to_factsAndAchievementsFragment"
+            app:destination="@id/factsAndAchievementsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/factsAndAchievementsFragment"
+        android:name="kg.zukhridin.factsandachievementsinsports.fragments.FactsAndAchievementsFragment"
+        android:label="fragment_facts_and_achievements"
+        tools:layout="@layout/fragment_facts_and_achievements" >
+        <action
+            android:id="@+id/action_factsAndAchievementsFragment_to_FragmentFootballFactsAndAchievementsBinding"
+            app:destination="@id/FragmentFootballFactsAndAchievementsBinding" />
     </fragment>
 </navigation>
